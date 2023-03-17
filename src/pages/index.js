@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Photos from './components/Photos';
 
-export const plans = [
+const plans = [
   {
     name: 'Basic',
     price: 79,
