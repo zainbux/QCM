@@ -1,5 +1,5 @@
-import React from 'react'
-import PriceCard from './PriceCard'
+import React from 'react';
+import PriceCard from './PriceCard';
 
 const Pricing = ({ plans }) => {
   return (
@@ -12,18 +12,15 @@ const Pricing = ({ plans }) => {
       </div>
 
       <div className='justify-center md:flex gap-12 md:gap-0'>
-          <div className={`justify-center md:flex gap-12 md:gap-0 ${ plans.featured ? " order-first md:order-none md:scale-110 md:z-10" : " "}`}>
-          {
-          plans.map(plan =>(
-              <PriceCard {...plan} key={plan.name} /> 
-          ))
-          }
-         </div>
-          
+        <div className='justify-center md:flex gap-12 md:gap-0'>
+          {plans.map((plan, index) => (
+            <PriceCard {...plan} key={index} featured={plan.featured} />
+          ))}
+        </div>
       </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default Pricing
+export default Pricing;
