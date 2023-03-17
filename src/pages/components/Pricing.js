@@ -12,15 +12,14 @@ const Pricing = ({ plans }) => {
       </div>
 
       <div className='justify-center md:flex gap-12 md:gap-0'>
+          <div className={`justify-center md:flex gap-12 md:gap-0 ${ plans.featured ? " order-first md:order-none md:scale-110 md:z-10" : " "}`}>
           {
           plans.map(plan =>(
-            
-            <div className={`justify-center md:flex gap-12 md:gap-0 ${ plans.featured ? " order-first md:order-none md:scale-110 md:z-10" : " "}`}>
               <PriceCard {...plan} key={plan.name} /> 
-            </div>
-
           ))
           }
+         </div>
+          
       </div>
 
     </div>

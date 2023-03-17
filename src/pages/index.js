@@ -20,7 +20,7 @@ const Home = () => {
 
       <main>
 
-        <section id="home" className='relative grow bg-primary bg-cover bg-center' style={{backgroundImage: "url('/bg-img.jpg')",}} >
+        <section id="home" className='relative grow bg-primary bg-cover bg-center' style={{backgroundImage: "url('/herobg.jpg')"}} >
           <Nav sections={['home', 'about', 'booking', 'contact']}/>
           <Hero />   
         </section>
