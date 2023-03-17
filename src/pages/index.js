@@ -3,10 +3,46 @@ import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';
 import Pricing from './components/Pricing';
-import { plans } from './plans';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Photos from './components/Photos';
+
+export const plans = [
+  {
+    name: 'Basic',
+    price: 79,
+    currency: '$',
+    featured:false,
+    features: [
+      'Lorem ipsum dolor sit amet, consectetur',
+      'Lorem ipsum dolor sit amet, consectetur',
+      'Lorem ipsum dolor sit amet, consectetur'
+    ]
+  },
+  {
+    name: 'Premium',
+    price: 119,
+    currency: '$',
+    featured:true,
+    features: [
+      'Lorem ipsum dolor sit amet, consectetur',
+      'Lorem ipsum dolor sit amet, consectetur',
+      'Lorem ipsum dolor sit amet, consectetur'
+    ]
+  },
+  {
+    name: 'Luxury',
+    price: 149,
+    currency: '$',
+    featured:false,
+    features: [
+      'Lorem ipsum dolor sit amet, consectetur',
+      'Lorem ipsum dolor sit amet, consectetur',
+      'Lorem ipsum dolor sit amet, consectetur'
+    ]
+  }
+
+]
 
 const Home = () => {
   return (
