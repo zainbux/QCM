@@ -4,6 +4,7 @@ import PriceCard from './PriceCard';
 
 const plans = [
   {
+    index : 1,
     name: 'Basic',
     price: 79,
     currency: '$',
@@ -15,6 +16,7 @@ const plans = [
     ]
   },
   {
+    index : 2,
     name: 'Premium',
     price: 119,
     currency: '$',
@@ -26,6 +28,7 @@ const plans = [
     ]
   },
   {
+    index : 3,
     name: 'Luxury',
     price: 149,
     currency: '$',
@@ -51,8 +54,8 @@ const Pricing = () => {
 
       <div className='justify-center md:flex gap-12 md:gap-0'>
         <div className='justify-center md:flex gap-12 md:gap-0'>
-          {plans.map((plan, index) => (
-            <PriceCard {...plan} key={index} featured={plan.featured} />
+          {plans.map((plan) => (
+            <PriceCard {...plan} key={plan.index} featured={plan.featured} />
           ))}
         </div>
       </div>
