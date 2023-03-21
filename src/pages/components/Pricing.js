@@ -1,7 +1,6 @@
 import React from 'react';
 import PriceCard from './PriceCard';
 
-
 const plans = [
   {
     index : 1,
@@ -53,8 +52,8 @@ const Pricing = () => {
       </div>
 
       <div className='justify-center md:flex gap-12 md:gap-0'>
-        <div className='justify-center md:flex gap-12 md:gap-0'>
-          {plans.map((plan) => (
+        <div className='justify-center md:flex gap-12 md:gap-0'> 
+          {plans.map(plan => (
             <PriceCard {...plan} key={plan.index} featured={plan.featured} />
           ))}
         </div>
