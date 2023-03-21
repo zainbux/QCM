@@ -7,42 +7,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Photos from './components/Photos';
 
-const plans = [
-  {
-    name: 'Basic',
-    price: 79,
-    currency: '$',
-    featured:false,
-    features: [
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur'
-    ]
-  },
-  {
-    name: 'Premium',
-    price: 119,
-    currency: '$',
-    featured:true,
-    features: [
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur'
-    ]
-  },
-  {
-    name: 'Luxury',
-    price: 149,
-    currency: '$',
-    featured:false,
-    features: [
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur'
-    ]
-  }
-
-]
 
 const Home = () => {
   return (
@@ -70,7 +34,7 @@ const Home = () => {
         </section>
 
         <section id="pricing">
-          <Pricing plans={plans}/>
+          <Pricing/>
         </section>
 
         <section id="contact">
