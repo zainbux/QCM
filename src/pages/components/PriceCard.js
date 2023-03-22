@@ -1,9 +1,8 @@
 import React from 'react'
 import { CheckIcon  } from '@heroicons/react/20/solid'
 
-
-const PriceCard = ({ name = '', price = 0,  currency ='$', features = [], featured = false }) => {
-  return (
+const PriceCard = ({ name = '', price = 0,  currency ='$', features = [], featured = false, }) => 
+    (
 
     <div className='h-full flex justify-center items-center py-12'>
 
@@ -43,6 +42,6 @@ const PriceCard = ({ name = '', price = 0,  currency ='$', features = [], featur
         </div>
     </div>
   )
-}
+
 
 export default PriceCard

@@ -6,7 +6,7 @@ const plans = [
     index : 1,
     name: "Basic",
     price: 79,
-    currency: {"$"},
+    currency: "$",
     featured:false,
     features: [
       "Lorem ipsum dolor sit amet, consectetur",
