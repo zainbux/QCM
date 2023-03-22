@@ -1,47 +1,49 @@
 import React from 'react';
 import PriceCard from './PriceCard';
 
-const plans = [
-  {
-    index : 1,
-    name: "Basic",
-    price: 79,
-    currency: "$",
-    featured:false,
-    features: [
-      "Lorem ipsum dolor sit amet, consectetur",
-      "Lorem ipsum dolor sit amet, consectetur",
-      "Lorem ipsum dolor sit amet, consectetur"
-    ]
-  },
-  {
-    index : 2,
-    name: "Premium",
-    price: 119,
-    currency: "$",
-    featured:true,
-    features: [
-      "Lorem ipsum dolor sit amet, consectetur",
-      "Lorem ipsum dolor sit amet, consectetur",
-      "Lorem ipsum dolor sit amet, consectetur"
-    ]
-  },
-  {
-    index : 3,
-    name: "Luxury",
-    price: 149,
-    currency: "$",
-    featured:false,
-    features: [
-      "Lorem ipsum dolor sit amet, consectetur",
-      "Lorem ipsum dolor sit amet, consectetur",
-      "Lorem ipsum dolor sit amet, consectetur"
-    ]
-  }
 
-]
 
 const Pricing = () => {
+  const plans = [
+    {
+      index : 1,
+      name: "Basic",
+      price: 79,
+      currency: "$",
+      featured:false,
+      features: [
+        "Lorem ipsum dolor sit amet, consectetur",
+        "Lorem ipsum dolor sit amet, consectetur",
+        "Lorem ipsum dolor sit amet, consectetur"
+      ]
+    },
+    {
+      index : 2,
+      name: "Premium",
+      price: 119,
+      currency: "$",
+      featured:true,
+      features: [
+        "Lorem ipsum dolor sit amet, consectetur",
+        "Lorem ipsum dolor sit amet, consectetur",
+        "Lorem ipsum dolor sit amet, consectetur"
+      ]
+    },
+    {
+      index : 3,
+      name: "Luxury",
+      price: 149,
+      currency: "$",
+      featured:false,
+      features: [
+        "Lorem ipsum dolor sit amet, consectetur",
+        "Lorem ipsum dolor sit amet, consectetur",
+        "Lorem ipsum dolor sit amet, consectetur"
+      ]
+    }
+  
+  ]
+  
   return (
     <div className='bg-primary items-center pb-6'>
     
