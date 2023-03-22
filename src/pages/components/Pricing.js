@@ -4,38 +4,38 @@ import PriceCard from './PriceCard';
 const plans = [
   {
     index : 1,
-    name: 'Basic',
+    name: "Basic",
     price: 79,
-    currency: '$',
+    currency: {"$"},
     featured:false,
     features: [
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur'
+      "Lorem ipsum dolor sit amet, consectetur",
+      "Lorem ipsum dolor sit amet, consectetur",
+      "Lorem ipsum dolor sit amet, consectetur"
     ]
   },
   {
     index : 2,
-    name: 'Premium',
+    name: "Premium",
     price: 119,
-    currency: '$',
+    currency: "$",
     featured:true,
     features: [
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur'
+      "Lorem ipsum dolor sit amet, consectetur",
+      "Lorem ipsum dolor sit amet, consectetur",
+      "Lorem ipsum dolor sit amet, consectetur"
     ]
   },
   {
     index : 3,
-    name: 'Luxury',
+    name: "Luxury",
     price: 149,
-    currency: '$',
+    currency: "$",
     featured:false,
     features: [
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur',
-      'Lorem ipsum dolor sit amet, consectetur'
+      "Lorem ipsum dolor sit amet, consectetur",
+      "Lorem ipsum dolor sit amet, consectetur",
+      "Lorem ipsum dolor sit amet, consectetur"
     ]
   }
 
