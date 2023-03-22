@@ -54,7 +54,7 @@ const Pricing = () => {
       <div className='justify-center md:flex gap-12 md:gap-0'>
         <div className='justify-center md:flex gap-12 md:gap-0'> 
           {plans.map(plan => (
-            <PriceCard {...plan} key={plan.index} featured={plan.featured} />
+            <PriceCard {...plan} key={plan.index} />
           ))}
         </div>
       </div>
