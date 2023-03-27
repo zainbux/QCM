@@ -1,5 +1,5 @@
 import React from 'react'
-import { CheckIcon  } from '@heroicons/react/20/solid'
+import { FaCheck } from 'react-icons/fa';
 
 const PriceCard = ({ name = '', price = 0,  currency ='$', features = [], featured = false, }) => 
    (
@@ -34,7 +34,7 @@ const PriceCard = ({ name = '', price = 0,  currency ='$', features = [], featur
                     {features.map((features, index) => (
 
                         <li key={index} className='flex items-center space-x-4'>
-                        <CheckIcon className='w-6 h-6 text-green-500 flex-shrink-0'/>
+                        <FaCheck className='w-6 h-6 text-green-500 flex-shrink-0'/>
                         <p>{features}</p>
                         </li>
                     ))}
