@@ -12,11 +12,11 @@ export const Footer =() => {
         <div className="flex flex-col gap-1">
           <a href="tel:+1234567890" className="text-white flex items-center mb-2 hover:text-secondary">
             <FaPhone className="mr-2" />
-            <span>+1234567890</span>
+            <span>613-668-8648</span>
           </a>
           <a href="mailto:info@example.com" className="text-white flex items-center hover:text-secondary">
             <FaEnvelope className="mr-2" />
-            <span>info@example.com</span>
+            <span>qcmdetail@gmail.com</span>
           </a>
         </div>
 
@@ -26,9 +26,9 @@ export const Footer =() => {
         </div>
 
         <div className="flex flex-col gap-1">
-          <a href="https://www.instagram.com/" className="text-white flex items-center mb-2 hover:text-secondary">
+          <a href="https://www.instagram.com/qcmdetailing/" className="text-white flex items-center mb-2 hover:text-secondary">
             <TiSocialInstagram className="mr-2" />
-            <span>@example</span>
+            <span>qcmdetailing</span>
           </a>
           <span className="text-gray-500 text-sm">Follow us for updates</span>
         </div>

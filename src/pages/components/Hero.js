@@ -1,6 +1,8 @@
 import React from 'react';
 import Discount from './Discount';
 import GetStarted from './GetStarted';
+import { Link } from 'react-scroll';
+
 
 
 const Hero = () => {
@@ -27,8 +29,27 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className='md:flex'>
-          <button type="button" className="inline-block px-6 py-3 mr-3 font-bold text-center align-middle transition-all bg-bg-primary border border-secondary rounded-sm cursor-pointer border-gradient leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 text-secondary hover:bg-white hover:text-primary ">LEARN MORE</button>
-          <button type="button" className="mr-3 inline-block px-6 py-3 font-bold text-center bg-secondary uppercase align-middle transition-all rounded-sm cursor-pointer leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25  text-primary  hover:bg-white ">BOOK NOW</button>
+
+          <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          className="hover:scale-110 duration-200 ease-out inline-block px-6 py-3 mr-3 font-bold  text-center align-middle transition-all bg-bg-primary border border-secondary rounded-sm cursor-pointer border-gradient leading-pro text-md ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 text-secondary hover:bg-white hover:text-primary active:opacity-80"
+          >
+          Learn More
+          </Link>
+
+          <Link
+            to="contact"
+            smooth={true}
+            spy={true}
+            exact="true"
+            className="hover:scale-110 duration-200 ease-out mr-3 inline-block px-6 py-3 font-bold text-center bg-secondary uppercase align-middle transition-all rounded-sm cursor-pointer leading-pro text-md ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25  text-primary  hover:bg-white active:opacity-80"
+          >
+            Book Now
+          </Link>
         </div>
 
 

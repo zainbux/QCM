@@ -8,37 +8,44 @@ const Pricing = () => {
     {
       index : 1,
       name: "Basic",
-      price: 79,
+      price: 80,
       currency: "$",
       featured:false,
       features: [
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor sit amet, consectetur"
+        "Exterior hand wash and dry",
+        "wheel and rim cleaning and shine",
+        "Window clean and shine",
+        "Tire dressing"
       ]
     },
     {
       index : 2,
       name: "Premium",
-      price: 119,
+      price: 160,
       currency: "$",
       featured:true,
       features: [
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor sit amet, consectetur"
+        "Everything in Basic +", 
+        "Car waxing", 
+        "Shampoo and clean carpets, seats, floor mats", 
+        "Spot clean headliner, dash and centre console",
+        "Door panels detailed", 
+        "Full interior vacuumed & steam cleaned", 
+        "Clean cracks and crevices", 
+        "Salt stain treatment", 
       ]
     },
     {
       index : 3,
       name: "Luxury",
-      price: 149,
+      price: 210,
       currency: "$",
       featured:false,
       features: [
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor sit amet, consectetur"
+        "Everything in Premium +",
+        "Deep engine cleaning",
+        "Window ceramic coating",
+        "Vehicle underside and exhaust tip cleaning"
       ]
     }
   

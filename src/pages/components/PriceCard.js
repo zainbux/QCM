@@ -2,11 +2,11 @@ import React from 'react'
 import { CheckIcon  } from '@heroicons/react/20/solid'
 
 const PriceCard = ({ name = '', price = 0,  currency ='$', features = [], featured = false, }) => 
-    (
+   (
 
-    <div className='h-full flex justify-center items-center py-12'>
+    <div className='h-full flex justify-center items-center px-auto py-12'>
 
-        <div className={`bg-white border-secondary rounded-sm shadow-xl md:w-60 lg:w-80 relative ${
+        <div className={`bg-white border-secondary rounded-sm shadow-xl md:w-60 lg:w-[450px] px-auto relative ${
             featured ? 'border-2' : 'border border-opacity-10'
         }`}>
             
@@ -19,10 +19,12 @@ const PriceCard = ({ name = '', price = 0,  currency ='$', features = [], featur
 
             {/* Header */}
             <div className='px-6 py-12 border-gray-200 text-3xl font-poppins font-semibold text-center '>
-                <p className='text-3xl font-semimbold text-center-4'>{name}</p>
+                <p className=' text-3xl md:text-5xl font-semimbold text-center-4'>{name}</p>
+                <p className='text-xl text-center mt-5'>starting at</p>
+
                 <div className='flex justify-center items-center'>
                     <p className='text-4xl font-medium'>{currency}</p>
-                    <p className='text-7xl font-bold'>{price}</p>
+                    <p className='text-4xl font-bold'>{price}</p>
                 </div>
             </div>
 

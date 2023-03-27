@@ -17,7 +17,7 @@ const Nav = () => {
         </div>
 
         {/* NavLinks */}
-        <ul className="list-none justify-end gap-5 items-center flex-1 text-blue-100 hover:text-gradient md:flex hidden text-xl -">
+        <ul className="list-none justify-end gap-5 items-center flex-1 text-blue-100 hover:text-gradient md:flex hidden text-xl cursor-pointer">
           {sections.map(section => (
             <li key={section}>
               <Link

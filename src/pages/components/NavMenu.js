@@ -30,7 +30,6 @@ const NavSidebar = () => {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
           className="w-[55%] flex justify-center rounded-lg shadow-lg bg-[#101a33] text-white p-3 m-2 hover:scale-110 duration-200 ease-out"
           onClick={handleNav}
         >
@@ -42,7 +41,6 @@ const NavSidebar = () => {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
           className="w-[55%] flex justify-center rounded-lg shadow-lg bg-[#101a33] text-white p-3 m-2 hover:scale-110 ease-out duration-200"
           onClick={handleNav}
         >
@@ -54,7 +52,6 @@ const NavSidebar = () => {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
           className="w-[55%] flex justify-center rounded-lg shadow-lg bg-[#101a33] text-white p-3 m-2 hover:scale-110 ease-out duration-200"
           onClick={handleNav}
         >
@@ -66,7 +63,6 @@ const NavSidebar = () => {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
           className="w-[55%] flex justify-center rounded-lg shadow-lg bg-[#101a33] text-white p-3 m-2 hover:scale-110 ease-out duration-200"
           onClick={handleNav}
         >

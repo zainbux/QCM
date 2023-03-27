@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Photos from './components/Photos';
 
-
 const Home = () => {
   return (
     <div>
@@ -25,19 +24,21 @@ const Home = () => {
           <Hero />   
         </section>
 
-        <section id="booking">
+        <section id="about">
           <About/>
         </section>
 
-        <section id="photos">
+        {/* <section id="photos">
           <Photos/>
-        </section>
+        </section> */}
 
         <section id="pricing">
           <Pricing/>
         </section>
 
         <section id="contact">
+          <h1 className='text-6xl font-semibold text-center p-6'>Booking</h1>
+          <p className='p-5 text-2xl text-center md:text-3xl pb-5'>Please fill in both forms correctly to get your Quote as soon as possible</p>
           <Contact/>
         </section>
   
