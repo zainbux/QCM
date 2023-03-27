@@ -14,11 +14,11 @@ const About = () => {
         
           <h1 className='text-4xl font-bold mb-4'>About Us</h1>
 
-          <p className='mb-4'>
+          <p className='mb-4 md:text-2xl'>
             We are a mobile auto detailing service that prioritizes convenience. You won&apos;t have to leave your house to get your vehicle detailed, we will come to you. We pride ourselves on using only the best products and equipment, ensuring that your vehicle looks brand new.
           </p>
           
-          <p className='mb-4'>
+          <p className='mb-4 md:text-2xl'>
             We provide service to the entire Ottawa area, including Rockland, Kanata, and Gatineau. Our team is dedicated to providing high-quality service and ensuring that our customers are satisfied with the end result. Let us take care of your car while you sit back and relax.
           </p>
 
