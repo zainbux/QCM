@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { FaCalendarAlt, FaCar, FaClock, FaHandHoldingWater, FaHourglassEnd } from 'react-icons/fa';
+import { FaCalendarAlt, FaCar, FaClock, FaDollarSign, FaHandHoldingWater, FaHourglassEnd } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -74,10 +74,9 @@ const notify = () => toast("Your quote has been successfully sent!");
             <div className='relative inline-flex mt-5'>
               <select value={selectedCar} onChange={handleSelectedCar} className=' w-[100px] md:w-[200px] text-xs md:text-base inline-block h-12  active:border active:bg-slate-300 text-center bg-primary uppercase align-middle transition-all rounded-sm cursor-pointer shadow-3xl text-white  hover:bg-blue-100 hover:border hover:border-primary hover:text-primary'>
                 <option>Car Type</option>
-                <option>Sedan</option>
-                <option>SUV</option>
-                <option>Pickup</option>
-                <option>Van</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
               </select>
             </div>
           </div>
@@ -123,25 +122,60 @@ const notify = () => toast("Your quote has been successfully sent!");
                 />
             </div>
 
-                </div>
-
-                <div className='h-40 w-full bg-blue-100 rounded-sm'>
+            <div className='h-40 w-full bg-blue-100 rounded-sm'>
                     <h1 className='mt-5 pt-4'>DURATION</h1>
-                    <FaHourglassEnd size={30} className='mx-auto mt-2'/>
-                    <p className='text-5xl font-bold mt-5'>
+                    <FaHourglassEnd size={20} className='mx-auto mt-2'/>
+                    <p className='text-4xl font-bold mt-2 pr-3'>
                         {(() => {
                             if (selectedPackage === 'Basic') {
-                            return "~" + 75;
-                            } else if (selectedPackage === 'Premium') {
                             return "~" + 90;
+                            } else if (selectedPackage === 'Premium') {
+                            return "~" + 150;
                             } else if (selectedPackage === 'Luxury') {
-                            return "~" + 110;
+                            return "~" + 210;
                             }
                         })()}
                     </p>
-
                 </div>
+
+                <div className='h-40 w-full bg-blue-100 rounded-sm'>
+                  <h1 className='mt-3 pt-4 text-lg'>Price</h1>
+                  <FaDollarSign size={20} className='mx-auto mt-2'/>
+                  <p className='text-4xl font-bold mt-2'>
+                    {(() => {
+                      if (selectedPackage === 'Basic') {
+                        if (selectedCar === 'Small') {
+                          return 80;
+                        } else if (selectedCar === 'Medium') {
+                          return 100;
+                        } else if (selectedCar === 'Large') {
+                          return 120;
+                        }
+                      } else if (selectedPackage === 'Premium') {
+                        if (selectedCar === 'Small') {
+                          return 160;
+                        } else if (selectedCar === 'Medium') {
+                          return 200;
+                        } else if (selectedCar === 'Large') {
+                          return 240;
+                        }
+                      } else if (selectedPackage === 'Luxury') {
+                        if (selectedCar === 'Small') {
+                          return 210;
+                        } else if (selectedCar === 'Medium') {
+                          return 260;
+                        } else if (selectedCar === 'Large') {
+                          return 310;
+                        }
+                      }
+                    })()}
+                  </p>
+                </div>
+
+
         </div>
+
+          </div>
 
         {/* Right div */}
         <div className='md:w-1/2 py-16 px-12 bg-blue-100'>

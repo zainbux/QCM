@@ -22,7 +22,7 @@ export const Footer =() => {
 
         <div className="flex flex-col items-center gap-1">
           <FaClock className="text-white mb-2" />
-          <span className="text-white">Mon-Fri: 9am-5pm</span>
+          <span className="text-white">Mon-Sun: 9am-2pm</span>
         </div>
 
         <div className="flex flex-col gap-1">

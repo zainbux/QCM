@@ -12,9 +12,9 @@ const Hero = () => {
       <div className='flex flex-col items-center md:items-start md:justify-between'>
 
         {/* discount banner */}        
-        <div className='mb-5'>
+        {/* <div className='mb-5'>
           <Discount />
-        </div>
+        </div> */}
 
         {/* hero titles */}
         <div className='leading-[1] font-poppins font-semibold text-white text-center md:text-left text-[50px] md:text-[70px] mb-4 '>
