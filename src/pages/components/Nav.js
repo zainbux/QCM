@@ -4,15 +4,15 @@ import { Link } from 'react-scroll';
 
 
 const Nav = () => {
-  const sections = ['home', 'about', 'pricing', 'contact'];
+  const sections = ['home', 'about', 'photos', 'pricing', 'contact'];
 
   return (
     <div>
       <NavSidebar sections={sections} className="m-0" />
-      <div className='flex items-center justify-between mx-10 p-10'>
+      <div className='flex items-center justify-between md:mx-10 p-10'>
 
         {/* Logo */}
-        <div>
+        <div className='justify-start'>
           <img src="LogoW.png" alt="Logo" className='md:w-[130px] w-[100px] cursor-pointer'/>
         </div>
 

@@ -4,20 +4,26 @@ import { FaArrowCircleLeft, FaArrowCircleRight, FaDotCircle } from 'react-icons/
 const Photos = () => {
     const slides = [
         {
-          url: 'carimg.jpg',
+          url: 'bmw1.png',
         },
         {
-          url: 'car2.jpg',
+          url: 'bmw2.png',
         },
         {
-          url: '4.jpg',
+          url: 'wheel.png',
+        },
+        {
+          url: 'seat.png',
+        },
+        {
+          url: 'cup-holder.png',
         },
     
         {
-          url: '2.PNG',
+          url: 'BEFORE.png',
         },
         {
-          url: '3.PNG',
+          url: 'door.png',
         },
       ];
     
@@ -40,22 +46,22 @@ const Photos = () => {
       };
   return (
     <div>
-        <div className='text-5xl font-semibold text-blue-100 text-center bg-primary '>
+        <div className='text-6xl font-semibold text-blue-100 text-center bg-primary '>
             <h1 className='py-20'>Our Work</h1>
         </div>
 
-        <div className=' h-[680px] w-full m-auto  relative group'>
+        <div className=' h-[280px] md:h-[680px] w-full m-auto  relative group'>
         <div
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-            className='w-full h-full bg-center bg-cover duration-500'
+            className='w-full h-full bg-center bg-contain bg-no-repeat duration-200 bg-primary'
         ></div>
         {/* Left Arrow */}
-        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-            <FaArrowCircleLeft onClick={prevSlide} size={30} />
+        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-1 bg-black/20 text-white cursor-pointer'>
+            <FaArrowCircleLeft onClick={prevSlide} className=' text-5xl md:text-8xl hover:text-slate-400 active:text-slate-600' />
         </div>
         {/* Right Arrow */}
-        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-            <FaArrowCircleRight onClick={nextSlide} size={30} />
+        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-1 bg-black/20 text-white cursor-pointer'>
+            <FaArrowCircleRight onClick={nextSlide} className=' text-5xl md:text-8xl hover:text-slate-400 active:text-slate-600' />
         </div>
         <div className='flex top-4 justify-center py-2'>
             {slides.map((slide, slideIndex) => (

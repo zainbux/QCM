@@ -28,11 +28,10 @@ const Pricing = () => {
         "Everything in Basic +", 
         "Car waxing", 
         "Shampoo and clean carpets, seats, floor mats", 
-        "Spot clean headliner, dash and centre console",
+        "Dash and centre console cleaning",
         "Door panels detailed", 
         "Full interior vacuumed & steam cleaned", 
         "Clean cracks and crevices", 
-        "Salt stain treatment", 
       ]
     },
     {
@@ -55,7 +54,7 @@ const Pricing = () => {
     <div className='bg-primary items-center pb-6'>
     
       <div className='text-center py-8'>
-        <h1 className='text-blue-100 text-5xl font-poppins font-semibold mt-14'>
+        <h1 className='text-blue-100 text-6xl font-poppins font-semibold mt-20'>
           Pricing
         </h1>
       </div>

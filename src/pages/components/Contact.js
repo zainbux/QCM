@@ -147,25 +147,25 @@ const notify = () => toast("Your quote has been successfully sent!");
                         if (selectedCar === 'Small') {
                           return 80;
                         } else if (selectedCar === 'Medium') {
-                          return 100;
+                          return 110;
                         } else if (selectedCar === 'Large') {
-                          return 120;
+                          return 140;
                         }
                       } else if (selectedPackage === 'Premium') {
                         if (selectedCar === 'Small') {
-                          return 160;
+                          return 180;
                         } else if (selectedCar === 'Medium') {
-                          return 200;
-                        } else if (selectedCar === 'Large') {
                           return 240;
+                        } else if (selectedCar === 'Large') {
+                          return 280;
                         }
                       } else if (selectedPackage === 'Luxury') {
                         if (selectedCar === 'Small') {
-                          return 210;
+                          return 240;
                         } else if (selectedCar === 'Medium') {
-                          return 260;
+                          return 300;
                         } else if (selectedCar === 'Large') {
-                          return 310;
+                          return 340;
                         }
                       }
                     })()}

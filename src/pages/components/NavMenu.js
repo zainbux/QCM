@@ -46,6 +46,19 @@ const NavSidebar = () => {
         >
           <span>ABOUT</span>
         </Link>
+
+        <Link
+          to="photos"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          className="w-[55%] flex justify-center rounded-lg shadow-lg bg-[#101a33] text-white p-3 m-2 hover:scale-110 ease-out duration-200"
+          onClick={handleNav}
+        >
+          <span>PHOTOS</span>
+        </Link>
+
         <Link
           to="pricing"
           smooth={true}
@@ -57,6 +70,7 @@ const NavSidebar = () => {
         >
           <span>PRICING</span>
         </Link>
+
         <Link
           to="contact"
           smooth={true}
