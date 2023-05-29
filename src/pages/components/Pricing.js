@@ -8,7 +8,7 @@ const Pricing = () => {
     {
       index : 1,
       name: "Basic",
-      price: 80,
+      price: 60,
       currency: "$",
       featured:false,
       features: [
@@ -21,7 +21,7 @@ const Pricing = () => {
     {
       index : 2,
       name: "Premium",
-      price: 160,
+      price: 150,
       currency: "$",
       featured:true,
       features: [
@@ -37,7 +37,7 @@ const Pricing = () => {
     {
       index : 3,
       name: "Luxury",
-      price: 210,
+      price: 200,
       currency: "$",
       featured:false,
       features: [
