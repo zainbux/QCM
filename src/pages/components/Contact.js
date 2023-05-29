@@ -161,7 +161,7 @@ const notify = () => toast("Your quote has been successfully sent!");
                         }
                       } else if (selectedPackage === 'Luxury') {
                         if (selectedCar === 'Small') {
-                          return 110;
+                          return 200;
                         } else if (selectedCar === 'Medium') {
                           return 250;
                         } else if (selectedCar === 'Large') {
