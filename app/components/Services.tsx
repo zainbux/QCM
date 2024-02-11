@@ -133,8 +133,6 @@ const Services = (props: Props) => {
                             <ul className='space-y-3'>
                                 <li className='bg-primary text-slate-200 flex p-5  w-full rounded-sm items-center'>Elevate your car care experience to the pinnacle with our Luxury Package, encompassing everything from the Premium Package and introducing a meticulous deep engine cleaning, ensuring your vehicle not only looks spectacular but also performs at its optimal best.</li>
                                 <li className='bg-primary text-slate-200 flex p-5  w-full rounded-sm items-center'>Get the ultimate protection for your windows with our window ceramic coating, an exclusive addition to our Luxury Package that not only enhances clarity but also provides a durable shield against the elements, keeping your vehicles windows crystal clear in any weather.</li>
-                                <li className='bg-primary text-slate-200 flex p-5  w-full rounded-sm items-center'>Our Luxury Package concludes with a comprehensive vehicle underside and exhaust tip cleaning, delivering a finishing touch that ensures every inch of your car, inside and out, reflects the highest standard of cleanliness and attention to detail.</li>
-
                             </ul>
                         </div>
 
