@@ -46,9 +46,9 @@ export default async function Home() {
           <br className='text-white'></br>
         </section>
 
-        {/* <section id="services" className=''>
+        <section id="services" className=''>
           <Services/>
-        </section> */}
+        </section>
 
         <section id="pricing">
           <Pricing/>
