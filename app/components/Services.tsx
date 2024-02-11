@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image"
+import React from "react"
 
 import {
   Card,
@@ -26,7 +26,7 @@ type Props = {}
 
 const Services = (props: Props) => {
   return (
-    <div className='bg-blue-100  pt-10'>
+    <div className="bg-blue-100  pt-10">
 
         <h1>
             hi
