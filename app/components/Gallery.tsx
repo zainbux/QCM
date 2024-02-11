@@ -11,8 +11,8 @@ type Props = {
 const Gallery = ({ images }:Props) => {
 
     const columns = {
-    xs: 1,
-    sm: 1,
+    xs: 2,
+    sm: 2,
     md: 3,
     lg: 3,
     xl: 4,
@@ -23,7 +23,7 @@ const Gallery = ({ images }:Props) => {
 
   return (
 
-    <div className='px-10'>
+    <div className='md:px-10'>
         <Masonry data={masonryData} column={columns}/>
     </div>
   )

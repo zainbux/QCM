@@ -53,6 +53,15 @@ const NavSidebar = ({ sections }: { sections: string[] }) => {
           </a>
         </Link>
 
+        <Link legacyBehavior href="#services" passHref>
+          <a
+            className="w-[55%] flex justify-center rounded-lg shadow-lg bg-[#101a33] text-white p-3 m-2 hover:scale-110 ease-out duration-200"
+            onClick={handleNav}
+          >
+            <span>SERVICES</span>
+          </a>
+        </Link>
+
         <Link legacyBehavior href="#pricing" passHref>
           <a
             className="w-[55%] flex justify-center rounded-lg shadow-lg bg-[#101a33] text-white p-3 m-2 hover:scale-110 ease-out duration-200"
@@ -62,12 +71,12 @@ const NavSidebar = ({ sections }: { sections: string[] }) => {
           </a>
         </Link>
 
-        <Link legacyBehavior href="#contact" passHref>
+        <Link legacyBehavior href="#booking" passHref>
           <a
             className="w-[55%] flex justify-center rounded-lg shadow-lg bg-[#101a33] text-white p-3 m-2 hover:scale-110 ease-out duration-200"
             onClick={handleNav}
           >
-            <span>CONTACT</span>
+            <span>BOOKING</span>
           </a>
         </Link>
       </div>

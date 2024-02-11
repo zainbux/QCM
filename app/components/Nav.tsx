@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 
 const Nav = () => {
-  const sections = ['home', 'about', 'photos', 'pricing', 'contact'];
+  const sections = ['home', 'about', 'photos', 'pricing', 'services', 'booking'];
 
   return (
     <div>

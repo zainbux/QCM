@@ -9,10 +9,10 @@ export const Footer =() => {
   return (
     <footer className="bg-primary">
 
-      <div className="container mx-auto py-20 px-4 flex flex-wrap justify-center gap-10 items-center text-lg">
+      <div className="container mx-auto py-20 px-10 flex flex-wrap justify-center gap-10 items-center text-lg">
 
-        <div className="flex flex-col gap-1">
-          <a href="tel:+1234567890" className="text-white flex items-center mb-2 hover:text-secondary">
+        <div className="flex flex-col gap-1 w-60">
+          <a href="tel:+1234567890" className="text-white flex mx-auto items-center mb-2 hover:text-secondary">
             <FaPhone className="mr-2" />
             <span>613-668-8648</span>
           </a>
@@ -22,17 +22,17 @@ export const Footer =() => {
           </a>
         </div>
 
-        <div className="flex flex-col items-center gap-1">
+        <div className="flex flex-col items-center gap-1 w-60">
           <FaClock className="text-white mb-2" />
           <span className="text-white">Mon-Sun: 9am-2pm</span>
         </div>
 
-        <div className="flex flex-col gap-1">
-          <a href="https://www.instagram.com/qcmdetailing/" className="text-white flex items-center mb-2 hover:text-secondary">
+        <div className="flex flex-col gap-1 w-60">
+          <a href="https://www.instagram.com/qcmdetailing/" className="text-white flex mx-auto items-center mb-2 hover:text-secondary">
             <TiSocialInstagram className="mr-2" />
             <span>qcmdetailing</span>
           </a>
-          <span className="text-gray-500 text-sm">Follow us for updates</span>
+          <span className="text-gray-500 text-sm mx-auto">Follow us for updates</span>
         </div>
 
       </div>
