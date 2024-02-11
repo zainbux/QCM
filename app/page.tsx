@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 
 import { getDetails, getImages } from "@/sanity/sanity-utils";
 import Gallery from './components/Gallery';
+import Services from './components/Services';
 import PriceCard from './components/PriceCard';
 
 export default async function Home() {
@@ -45,7 +46,9 @@ export default async function Home() {
           <br className='text-white'></br>
         </section>
 
-
+        <section id="services" className=''>
+          <Services/>
+        </section>
 
         <section id="pricing">
           <Pricing/>
@@ -64,7 +67,7 @@ export default async function Home() {
         <section id="booking" className='pt-8'>
           <h1 className='text-6xl font-semibold text-center mt-10 p-6 '>Booking</h1>
           <p className='px-10 text-xl text-center md:text-2xl pb-10'>please select an available time slot and fill in the required details</p>
-          <div className='px-10'>
+          <div className='md:px-10'>
             {/* <!-- Google Calendar Appointment Scheduling begin --> */}
             <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2GkWCwGuFlKQKxTiehEn-7SsQmtZ9J0fqZiOXQ-NA7Ey_DYy2ShaX1RTTn6FvpYDdxbX-Ykei5?gv=true"  width="100%" height="600" ></iframe>
             {/* <!-- end Google Calendar Appointment Scheduling --> */}          
