@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 
 import { getDetails, getImages } from "@/sanity/sanity-utils";
 import Gallery from './components/Gallery';
-import Services from './components/Services';
 import PriceCard from './components/PriceCard';
 
 export default async function Home() {
@@ -46,9 +45,7 @@ export default async function Home() {
           <br className='text-white'></br>
         </section>
 
-        <section id="services" className=''>
-          <Services/>
-        </section>
+
 
         <section id="pricing">
           <Pricing/>
