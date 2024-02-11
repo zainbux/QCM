@@ -22,9 +22,7 @@ import {
 
 
 
-type Props = {}
-
-const Services = (props: Props) => {
+const Services = () => {
   return (
     <div className="bg-blue-100  pt-10">
 
