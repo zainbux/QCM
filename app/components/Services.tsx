@@ -31,10 +31,9 @@ const Services = (props: Props) => {
   return (
     <div className='bg-blue-100  pt-10'>
 
-        <div className='text-center mx-auto w-[50%] py-10'>
-            <h1 className='text-primary text-6xl font-poppins font-semibold mb-5 mx-auto'>
-                Services
-            </h1>
+         <h1 className='text-6xl font-semibold text-center py-10 p-6 text-primary'>Services</h1>
+
+        <div className='text-center mx-auto w-[50%]'>
             <p className='mb-4 text-2xl md:text-2xl'>
                 We offer three packages of detailing services for your convience, we are flexible and are always willing to do any custom detailing work as well. 
             </p>

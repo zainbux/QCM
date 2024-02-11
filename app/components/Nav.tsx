@@ -14,8 +14,8 @@ const Nav = () => {
       <div className='flex items-center justify-between md:mx-10 p-10'>
 
         {/* Logo */}
-        <div className='justify-start'>
-          <img src="LogoW.png" alt="Logo" className='md:w-[130px] w-[100px] cursor-pointer'/>
+        <div className='mx-auto md:justify-start'>
+          <img src="LogoW.png" alt="Logo" className='md:w-[130px] w-[100px] cursor-pointer '/>
         </div>
 
         {/* NavLinks */}
