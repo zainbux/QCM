@@ -9,24 +9,31 @@ type Props = {
 }
 
 const Gallery = ({ images }:Props) => {
-
-    const columns = {
-    xs: 2,
-    sm: 2,
-    md: 3,
-    lg: 3,
-    xl: 4,
-    xxl: 5,
-    };
-      
-    const masonryData = images.map((imageUrl) => ({ src: imageUrl }));
+;
 
   return (
 
-    <div className='md:px-10'>
-        <Masonry data={masonryData} column={columns}/>
+    <div className="">
+
+    <div className=" columns-1 md:columns-3 gap-4 mx-auto md:p-5 space-y-4">
+      {images.map((image) => (
+
+        <div key={image} className="break-inside-avoid relative group">
+
+          <Image
+            src={image}
+            alt="Product image"
+            className="w-full h-full object-cover object-center lg:h-full lg:w-full rounded-sm"
+            width={600}
+            height={600}
+          />
+
+        </div>
+        ))}
+
+      </div>
     </div>
-  )
-}
+
+)}
 
 export default Gallery

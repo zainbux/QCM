@@ -30,8 +30,8 @@ const PriceCard: React.FC<PriceCardProps> = ({
       ) : null}
 
       {/* Header */}
-      <div className='px-6 py-12 border-gray-200 text-3xl font-poppins font-semibold text-center '>
-        <p className='text-3xl md:text-5xl font-semimbold text-center-4'>{name}</p>
+      <div className='px-6 py-12 border-gray-200 text-2xl font-poppins font-semibold text-center '>
+        <p className='text-3xl md:text-4xl font-semimbold text-center-4'>{name}</p>
         <p className='text-xl text-center mt-5'>starting at</p>
 
         <div className='flex justify-center items-center'>
